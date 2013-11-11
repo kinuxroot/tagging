@@ -57,9 +57,9 @@ public class ResultPanel extends JPanel {
 		final JLabel sl = new JLabel(" | ");
 
 		String pt1 = "resource" + File.separator + "images" + File.separator
-				+ "add.jpg";
+				+ "add.png";
 		String pt2 = "resource" + File.separator + "images" + File.separator
-				+ "remove.jpg";
+				+ "remove.png";
 		ImageIcon icon = new ImageIcon(ImageHelper.createIconImages(pt1));
 		ImageIcon icon1 = new ImageIcon(ImageHelper.createIconImages(pt2));
 		final JButton addButton = new JButton(icon);

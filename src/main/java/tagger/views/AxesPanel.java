@@ -66,7 +66,7 @@ public class AxesPanel extends JPanel implements ActionListener {
 		addBlank();
 
 		String pt = "resource" + File.separator + "images" + File.separator
-				+ "add.jpg";
+				+ "add.png";
 		ImageIcon icon = new ImageIcon(ImageHelper.createIconImages(pt));
 		addButton = new JButton(icon);
 		addButton.setPreferredSize(new Dimension(15, 15));

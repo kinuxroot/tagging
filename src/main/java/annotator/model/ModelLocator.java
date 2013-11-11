@@ -39,7 +39,7 @@ public class ModelLocator {
 	public void init() {
 		preferences = Preferences.userNodeForPackage(ModelLocator.class);
 		String title = preferences.get("TITLE", "Default figure");
-		String figureFileName = preferences.get("FIGURE_FILE_NAME", "cell.jpg");
+		String figureFileName = preferences.get("FIGURE_FILE_NAME", "cell.png");
 		String legend = preferences
 				.get("LEGEND",
 						"Panel A (periodic acid-Schiff stain) shows mesangial hypercellularity, with four or more cells per mesangial area (arrow). Panel B (periodic acid-Schiff stain) shows segmental endocapillary proliferation with occlusion of the capillary lumen (arrow). Panel C (periodic acid-Schiff stain) shows segmental glomerulosclerosis and adhesion, with focal accumulation of hyaline and obliteration of the capillary lumen (arrow). Panel D (trichrome stain) shows tubular atrophy and interstitial fibrosis, with severe interstitial scarring and loss of tubules (arrow). Panel E (periodic acid-Schiff stain) shows a glomerular crescent; a circumferential layer of epithelial cells surrounds the glomerular tuft (arrow). Panel F (immunofluorescence stain with fluorescein-conjugated anti-IgA antibodies) shows diffuse mesangial staining for IgA (arrow). In Panel G, an electron micrograph of a glomerular capillary tuft in a specimen fixed in osmium tetroxide shows electron-dense material in the mesangial area (arrow), a finding that is consistent with the accumulation of immune complexes.");

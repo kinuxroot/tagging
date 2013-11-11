@@ -58,7 +58,7 @@ public class AxisPanel extends JPanel {
 	public void addItem(final TermModel term) {
 		final JLabel label = new JLabel(term.getName());
 		String pt = "resource" + File.separator + "images" + File.separator
-				+ "remove.jpg";
+				+ "remove.png";
 		Image icon = ImageHelper.createIconImages(pt);
 		final JButton b = new JButton(new ImageIcon(icon));
 		b.setPreferredSize(new Dimension(15, 15));
