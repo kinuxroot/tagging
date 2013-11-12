@@ -154,6 +154,13 @@ public class MainWindow extends JFrame {
 	 * add listeners
 	 */
 	private void addListeners() {
+		addLoadMetaImagesListener();
+		addImportAnnotationListener();
+		addLoadMultiMediaListener();
+		addViewSettingsListener();
+	}
+
+	private void addLoadMetaImagesListener() {
 		JMenuItem item = menuBar.getMenu(0).getItem(0);
 		item.addActionListener(new ActionListener() {
 
@@ -161,11 +168,12 @@ public class MainWindow extends JFrame {
 			public void actionPerformed(ActionEvent arg0) {
 				LoadFrame loadFrame = new LoadFrame();
 				loadFrame.setVisible(true);
-
 			}
 		});
+	}
 
-		item = menuBar.getMenu(0).getItem(1);
+	private void addImportAnnotationListener() {
+		JMenuItem item = menuBar.getMenu(0).getItem(1);
 		item.addActionListener(new ActionListener() {
 
 			@Override
@@ -181,11 +189,10 @@ public class MainWindow extends JFrame {
 
 			}
 		});
+	}
 
-		/*
-		 * load multi media file
-		 */
-		item = menuBar.getMenu(0).getItem(2);
+	private void addLoadMultiMediaListener() {
+		JMenuItem item = menuBar.getMenu(0).getItem(2);
 		item.addActionListener(new ActionListener() {
 
 			@Override
@@ -195,11 +202,10 @@ public class MainWindow extends JFrame {
 
 			}
 		});
+	}
 
-		/*
-		 * view settings
-		 */
-		item = menuBar.getMenu(2).getItem(0);
+	private void addViewSettingsListener() {
+		JMenuItem item = menuBar.getMenu(2).getItem(0);
 		item.addActionListener(new ActionListener() {
 
 			@Override
