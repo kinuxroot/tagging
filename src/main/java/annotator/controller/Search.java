@@ -10,7 +10,6 @@ import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.message.BasicNameValuePair;
-import org.apache.http.protocol.HTTP;
 import org.apache.http.util.EntityUtils;
 
 public class Search {
@@ -65,7 +64,7 @@ public class Search {
 			params.add(new BasicNameValuePair("format", "xml")); // 'text','xml',
 			params.add(new BasicNameValuePair("apikey", apiKey));
 			// coding
-			httpPost.setEntity(new UrlEncodedFormEntity(params, HTTP.UTF_8));
+			httpPost.setEntity(new UrlEncodedFormEntity(params, "UTF-8"));
 			// send request
 			// DefaultHttpClient has been deprecated
 			HttpResponse response = 

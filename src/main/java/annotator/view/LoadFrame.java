@@ -80,7 +80,7 @@ public class LoadFrame extends JFrame implements ActionListener {
 				state = chooser.showOpenDialog(null);
 				dataFile = chooser.getSelectedFile();
 
-				if (dataFile != null && state == JFileChooser.APPROVE_OPTION) { // 选择了文件并点击了打开可保存按钮
+				if (dataFile != null && state == JFileChooser.APPROVE_OPTION) {
 					text1.setText(dataFile.getAbsolutePath());
 					preferences.put(DATA_FILE_PATH, dataFile.getAbsolutePath());
 

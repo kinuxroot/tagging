@@ -19,7 +19,7 @@ import javax.swing.KeyStroke;
  *
  */
 
-//copy paste cut¡£
+//copy paste cut
 
 public class MyJTextField extends JTextField implements MouseListener {
 

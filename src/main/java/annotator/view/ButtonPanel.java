@@ -349,9 +349,9 @@ public class ButtonPanel extends JPanel implements ActionListener {
 			// Output to console for testing
 			// StreamResult result = new StreamResult(System.out);
 			transformer.setOutputProperty("encoding", "utf-8");
-			transformer.setOutputProperty(OutputKeys.INDENT, "yes");// 增加换行缩进，但此时缩进默认为0
+			transformer.setOutputProperty(OutputKeys.INDENT, "yes");
 			transformer.setOutputProperty(
-					"{http://xml.apache.org/xslt}indent-amount", "2");// 设置缩进为2
+					"{http://xml.apache.org/xslt}indent-amount", "2");
 
 			transformer.transform(source, result);
 		} catch (TransformerException | ParserConfigurationException e) {
