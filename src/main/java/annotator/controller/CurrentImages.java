@@ -13,7 +13,7 @@ public class CurrentImages {
 	private static CurrentImages instance = null;
 	private int current = 0;
 	private static int total = 0;
-	private ArrayList<ImageModel> imageModels = new ArrayList<>();
+	private ArrayList<ImageModel> imageModels = new ArrayList<ImageModel>();
 
 	public ImageModel getImageModelByIndex(int index) {
 		return imageModels.get(index);

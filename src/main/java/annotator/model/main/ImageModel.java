@@ -13,7 +13,7 @@ public class ImageModel  {
 	private String title = "Title of Figure";
 	private String figureFileName;
 	private String legend = "Here is the legend";
-	private ArrayList<TermModel> tags = new ArrayList<>();
+	private ArrayList<TermModel> tags = new ArrayList<TermModel>();
 	private boolean saveState = false;
 
 	public ArrayList<TermModel> getTags() {

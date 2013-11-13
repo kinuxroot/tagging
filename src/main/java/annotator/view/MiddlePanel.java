@@ -65,7 +65,7 @@ public class MiddlePanel extends JPanel implements ActionListener {
 	private RightPanel right;
 	private TagPanel tagPanel;
 	/* search results */
-	private ArrayList<TermModel> matches = new ArrayList<>();
+	private ArrayList<TermModel> matches = new ArrayList<TermModel>();
 
 	/**
 	 * constructor
@@ -132,7 +132,7 @@ public class MiddlePanel extends JPanel implements ActionListener {
 		String[] axisName = ModelLocator.getInstance().getAxisName();
 		final String[] items = axisName;
 		axes = ModelLocator.getInstance().getAxes();
-		axisBox = new JComboBox<>(items);
+		axisBox = new JComboBox<String>(items);
 		axisBox.setPreferredSize(new Dimension(260, 28));
 		searchPanel.add(axisBox);
 
@@ -168,19 +168,12 @@ public class MiddlePanel extends JPanel implements ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		String source = e.getActionCommand();
-		switch (source) {
-		case "Search":
+		if ( source == "Search" ) {
 			doSearch();
-			break;
-
-		case "Recommeded Tags":
-			doRecommend();
-			break;
-
-		default:
-			break;
 		}
-
+		else if ( source == "Recommeded Tags" ) {
+			doRecommend();
+		}
 	}
 
 	/**
@@ -201,8 +194,8 @@ public class MiddlePanel extends JPanel implements ActionListener {
 
 			/* map species to matched Go ids
 			 * specie <---> matched ids */
-			HashMap<String, ArrayList<String>> maps = new HashMap<>(); 
-			ArrayList<String> matchedGoIds = new ArrayList<>(); // id list
+			HashMap<String, ArrayList<String>> maps = new HashMap<String, ArrayList<String>>(); 
+			ArrayList<String> matchedGoIds = new ArrayList<String>(); // id list
 																// (GO:0005634 )
 			ArrayList<String> species = Prepare4Go.SPECIES; // 
 			// search all ontology files (csv)
@@ -309,7 +302,7 @@ public class MiddlePanel extends JPanel implements ActionListener {
 			String species) {
 		String csvPath = Prepare4Go.PATHTOSAVEGOCSV + File.separator + species
 				+ ".csv"; // csv path to search
-		ArrayList<String> result = new ArrayList<>(); // id results
+		ArrayList<String> result = new ArrayList<String>(); // id results
 		CSVReader reader;
 		try {
 			reader = new CSVReader(new FileReader(csvPath));

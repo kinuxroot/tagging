@@ -103,26 +103,18 @@ public class ButtonPanel extends JPanel implements ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		String source = e.getActionCommand();
-		switch (source) {
-		case "Previous":
+		if ( source == "Previous" ) {
 			previousAction();
-			break;
-
-		case "Next":
-			nextAction();
-			break;
-
-		case "Save":
-			saveAction();
-			break;
-
-		case "Exit":
-			exitAction();
-			break;
-		default:
-			break;
 		}
-
+		else if ( source == "Next" ) {
+			nextAction();
+		}
+		else if ( source == "Save" ) {
+			saveAction();
+		}
+		else if ( source == "Exit" ) {
+			exitAction();
+		}
 	}
 
 	/**
@@ -354,13 +346,14 @@ public class ButtonPanel extends JPanel implements ActionListener {
 					"{http://xml.apache.org/xslt}indent-amount", "2");
 
 			transformer.transform(source, result);
-		} catch (TransformerException | ParserConfigurationException e) {
+		} catch (TransformerException e) {
+			e.printStackTrace();
+		} catch (ParserConfigurationException e) {
 			e.printStackTrace();
 		}
 
 		currentImageModel.setSaveState(true);
 		System.out.println("File saved!");
-
 	}
 
 	private void saveAsBoth() {

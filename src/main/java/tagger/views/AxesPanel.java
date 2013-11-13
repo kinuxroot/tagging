@@ -28,7 +28,7 @@ public class AxesPanel extends JPanel implements ActionListener {
 	private WelcomeFrame parent;
 	private GridBagLayout layout;
 	private JButton addButton;
-	private ArrayList<JTextField> fields = new ArrayList<>();
+	private ArrayList<JTextField> fields = new ArrayList<JTextField>();
 
 
 	/* current row to add axis*/

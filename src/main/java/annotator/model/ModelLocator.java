@@ -23,7 +23,7 @@ public class ModelLocator {
 	// name of axes
 	private String[] axisName;
 	// mapping axes to ontologies
-	private HashMap<String, String> maps = new HashMap<>();
+	private HashMap<String, String> maps = new HashMap<String, String>();
 
 	private ArrayList<AxisModel> axes;
 
@@ -95,7 +95,7 @@ public class ModelLocator {
 		ot4.setVirtualId("1070");
 
 		
-		ArrayList<AxisModel> newAxisModels = new ArrayList<>();
+		ArrayList<AxisModel> newAxisModels = new ArrayList<AxisModel>();
 		
 		for (AxisModel am : axes) {
 			String name = am.getName();

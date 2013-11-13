@@ -36,7 +36,7 @@ public class ReadXML {
 			"Other Anatomic concept", "Sub-location", "Duplicate concept" };
 
 	public static ArrayList<TermModel> extractTerms(File xmlFile) {
-		ArrayList<TermModel> results = new ArrayList<>();
+		ArrayList<TermModel> results = new ArrayList<TermModel>();
 
 		try {
 			DocumentBuilderFactory dbFactory = DocumentBuilderFactory

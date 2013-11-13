@@ -23,7 +23,7 @@ public class Trans2CSV {
 	 * @param outputFolder : folder to save csv result
 	 */
 	public static void transfer2Csv(File inputFile, String outputFolder) {
-		ArrayList<String[]> content = new ArrayList<>();
+		ArrayList<String[]> content = new ArrayList<String[]>();
 		CSVWriter writer;
 		try {
 			BufferedReader in = new BufferedReader(new FileReader(inputFile));

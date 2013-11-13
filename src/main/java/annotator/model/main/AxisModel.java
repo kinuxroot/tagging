@@ -8,7 +8,7 @@ import java.util.ArrayList;
  */
 public class AxisModel {
 
-	private ArrayList<OntologyModel> ontologies = new ArrayList<>();
+	private ArrayList<OntologyModel> ontologies = new ArrayList<OntologyModel>();
 
 	private String name;
 

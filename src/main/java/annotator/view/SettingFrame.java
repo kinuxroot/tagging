@@ -25,7 +25,7 @@ import tagger.views.GBC;
 public class SettingFrame extends JFrame {
 
 	private static final long serialVersionUID = 1L;
-	private HashMap<String, String> axes2Ontologies = new HashMap<>();
+	private HashMap<String, String> axes2Ontologies = new HashMap<String, String>();
 	private boolean checkBioPortal = false;
 	private GridBagLayout layout;
 	private JTextField axesField;

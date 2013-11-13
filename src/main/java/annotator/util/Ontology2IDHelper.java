@@ -13,7 +13,7 @@ import org.jsoup.select.Elements;
  * 
  */
 public class Ontology2IDHelper {
-	public static HashMap<String, String> ontology2IDMap = new HashMap<>();
+	public static HashMap<String, String> ontology2IDMap = new HashMap<String, String>();
 	
 	static {
 		String url = "http://bioportal.bioontology.org/ontologies";

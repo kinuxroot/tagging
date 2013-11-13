@@ -11,7 +11,7 @@ public class Prepare4Go {
 
 	public static final String PATHTOSAVEGOCSV = "go"+ File.separator+"go_csv";
 	public static final String PATHTOUNZIP = "go" + File.separator+"go_annotation_file";
-	public static ArrayList<String> SPECIES = new ArrayList<>();
+	public static ArrayList<String> SPECIES = new ArrayList<String>();
 	//[Agrobacterium_tumefaciens, Arabidopsis_thaliana, Aspergillus_nidulans, Bos_taurus, Caenorhabditis_elegans, Candida_albicans, Canis_lupus_familiaris, Danio_rerio, Dickeya_dadantii, Dictyostelium_discoideum, Drosophila_melanogaster, Escherichia_coli, Gallus_gallus, gene_association.PAMGO_Atumefaciens, Homo_sapiens, Leishmania_major, Magnaporthe_grisea, Microbial_multispecies, Mus_musculus, Oomycetes, Oryza_sativa, Plasmodium_falciparum, Pseudomonas_aeruginosa, Rattus_norvegicus, Reactome_multispecies, Saccharomyces_cerevisiae, Schizosaccharomyces_pombe, Solanaceae, Sus_scrofa, Trypanosoma_brucei, UniProt_multispecies]
 
 	/**

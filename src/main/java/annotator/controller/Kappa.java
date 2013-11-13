@@ -16,7 +16,7 @@ import au.com.bytecode.opencsv.CSVReader;
  */
 public class Kappa {
 
-	private static ArrayList<String> commonTerms = new ArrayList<>();
+	private static ArrayList<String> commonTerms = new ArrayList<String>();
 
 	/**
 	 * calculate kappa of terms of interest
@@ -145,7 +145,7 @@ public class Kappa {
 	private static String[] extractFullIds(List<String[]> records) {
 		records.remove(0); // remove the header
 		/* remove the records if their terms not in common */
-		ArrayList<String[]> temp = new ArrayList<>();
+		ArrayList<String[]> temp = new ArrayList<String[]>();
 		for (String[] r : records) {
 			if (isCommon(r[0]) == false) {
 				temp.add(r);
